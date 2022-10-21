@@ -26,91 +26,195 @@
         <div class="card" style="width: 18rem">
           <img src="https://wallpaperaccess.com/full/2489629.jpg" class="card-img-top rounded" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            <h5 class="card-title">
+              <div class="product-name">
+                كنزة صوفية
+              </div>
+              <div class="store-name">
+                اسم المتجر
+              </div>
+            </h5>
+            <p class="card-text product-description text-secondary">
+             هذا النص مثال لنص يمكن استبداله 
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="price d-flex">
+              <div class="price-before text-muted">
+                100 ر.س
+              </div>
+              <div class="price-after">
+                60 ر.س
+              </div>
+            </div>
           </div>
         </div>
         <div class="card" style="width: 18rem">
-          <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1206682746.jpg" class="card-img-top rounded" alt="..." />
+          <img src="https://wallpaperaccess.com/full/2489629.jpg" class="card-img-top rounded" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            <h5 class="card-title">
+              <div class="product-name">
+                كنزة صوفية
+              </div>
+              <div class="store-name">
+                اسم المتجر
+              </div>
+            </h5>
+            <p class="card-text product-description text-secondary">
+             هذا النص مثال لنص يمكن استبداله 
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="price d-flex">
+              <div class="price-before text-muted">
+                100 ر.س
+              </div>
+              <div class="price-after">
+                60 ر.س
+              </div>
+            </div>
           </div>
         </div>
         <div class="card" style="width: 18rem">
           <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="card-img-top rounded" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            <h5 class="card-title">
+              <div class="product-name">
+                كنزة صوفية
+              </div>
+              <div class="store-name">
+                اسم المتجر
+              </div>
+            </h5>
+            <p class="card-text product-description text-secondary">
+             هذا النص مثال لنص يمكن استبداله 
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="https://wallpaperaccess.com/full/767033.jpg" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card" style="width: 18rem">
-          <img src="https://images6.alphacoders.com/439/439410.jpg" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="https://wallpaperaccess.com/full/767033.jpg" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="price d-flex">
+              <div class="price-before text-muted">
+                100 ر.س
+              </div>
+              <div class="price-after">
+                60 ر.س
+              </div>
+            </div>
           </div>
         </div>
         <div class="card" style="width: 18rem">
           <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dessert-main-image-molten-cake-0fbd4f2.jpg" class="card-img-top rounded" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            <h5 class="card-title">
+              <div class="product-name">
+                كنزة صوفية
+              </div>
+              <div class="store-name">
+                اسم المتجر
+              </div>
+            </h5>
+            <p class="card-text product-description text-secondary">
+             هذا النص مثال لنص يمكن استبداله 
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="price d-flex">
+              <div class="price-before text-muted">
+                100 ر.س
+              </div>
+              <div class="price-after">
+                60 ر.س
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width: 18rem">
+          <img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&w=1000&q=80" class="card-img-top rounded" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              <div class="product-name">
+                كنزة صوفية
+              </div>
+              <div class="store-name">
+                اسم المتجر
+              </div>
+            </h5>
+            <p class="card-text product-description text-secondary">
+             هذا النص مثال لنص يمكن استبداله 
+            </p>
+            <div class="price d-flex">
+              <div class="price-before text-muted">
+                100 ر.س
+              </div>
+              <div class="price-after">
+                60 ر.س
+              </div>
+            </div>
           </div>
         </div>
         <div class="card" style="width: 18rem">
-          <img src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top rounded" alt="..." />
+          <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1206682746.jpg" class="card-img-top rounded" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            <h5 class="card-title">
+              <div class="product-name">
+                كنزة صوفية
+              </div>
+              <div class="store-name">
+                اسم المتجر
+              </div>
+            </h5>
+            <p class="card-text product-description text-secondary">
+             هذا النص مثال لنص يمكن استبداله 
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="price d-flex">
+              <div class="price-before text-muted">
+                100 ر.س
+              </div>
+              <div class="price-after">
+                60 ر.س
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="https://wallpaperaccess.com/full/2489629.jpg" class="card-img-top rounded" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              <div class="product-name">
+                كنزة صوفية
+              </div>
+              <div class="store-name">
+                اسم المتجر
+              </div>
+            </h5>
+            <p class="card-text product-description text-secondary">
+             هذا النص مثال لنص يمكن استبداله 
+            </p>
+            <div class="price d-flex">
+              <div class="price-before text-muted">
+                100 ر.س
+              </div>
+              <div class="price-after">
+                60 ر.س
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="https://wallpaperaccess.com/full/2489629.jpg" class="card-img-top rounded" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">
+              <div class="product-name">
+                كنزة صوفية
+              </div>
+              <div class="store-name">
+                اسم المتجر
+              </div>
+            </h5>
+            <p class="card-text product-description text-secondary">
+             هذا النص مثال لنص يمكن استبداله 
+            </p>
+            <div class="price d-flex">
+              <div class="price-before text-muted">
+                100 ر.س
+              </div>
+              <div class="price-after">
+                60 ر.س
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -179,7 +283,27 @@ export default {
   padding: 10px;
   border-radius: 4px;
 }
-
+.card .card-title{
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-title .store-name{
+  color: var(--bg-color);
+}
+.price .price-before{
+  padding-left: 10px;
+  position: relative;
+}
+.price .price-before::after{
+  content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    background-color: var(--bs-secondary);
+    height: 1px;
+    left: 10px;
+    transform: rotate(-17deg);
+}
 .categories header{
   font-weight: bold;
 }

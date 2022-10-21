@@ -25,6 +25,11 @@
             <bestSales/>
           </div>
         </div>
+        <div class="row">
+          <div class="col-12 h-25">
+            <slider/>
+          </div>
+        </div>
       </div>
   </section>
 </template>

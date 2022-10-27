@@ -36,10 +36,10 @@
 
 <script>
 // @ is an alias to /src
-import slider from '@/components/slider.vue'
-import categories from '@/components/categories.vue'
-import discount from '@/components/discount.vue'
-import bestSales from '@/components/best-sales.vue'
+import slider from '@/components/home/slider.vue'
+import categories from '@/components/home/categories.vue'
+import discount from '@/components/home/discount.vue'
+import bestSales from '@/components/home/best-sales.vue'
 export default {
   name: 'HomeView',
   components: {

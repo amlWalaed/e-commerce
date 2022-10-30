@@ -10,14 +10,7 @@
       <span class="dispaly-all">عرض الكل</span>
     </section>
     <div class="categories-links">
-      <router-link to="#">الكل</router-link>
-      <router-link to="#">الملابس</router-link>
-      <router-link to="#">الاطعمة</router-link>
-      <router-link to="#">الحلويات</router-link>
-      <router-link to="#">الادوية</router-link>
-      <router-link to="#">الزيوت و الاعشاب</router-link>
-      <router-link to="#">العطور </router-link>
-      <router-link to="#">الاكسسورات</router-link>
+      <router-link :to="{ name : 'products', params:{ id : depart.id }}" v-for="depart in getDepartments" :key="depart.id">{{depart.name}}</router-link>
     </div>
     
   </div>
@@ -242,21 +235,15 @@
   </div>
 </template>
 <script>
+import { mapGetters } from 'vuex';
 export default {
   name: "best-sales",
   methods: {
-    slideFun() {
-      let products = document.querySelectorAll(".slide .product");
-      // let btnNext= document.querySelector('.slide .next');
-      // let btnPre= document.querySelector('.slide .pervious');
-      products.forEach((item) => {
-        let itemDimension = item.getBoundingClientRect();
-        let itemWidth = itemDimension.width;
-        item.scrollLeft += itemWidth;
-      });
-      console.log(products);
-    },
+   
   },
+  computed:{
+    ...mapGetters(['getDepartments'])
+  }
 };
 </script>
 <style scoped>

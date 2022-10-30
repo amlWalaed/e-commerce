@@ -1,6 +1,7 @@
 <template>
 <div class="products-board rounded d-flex flex-wrap justify-content-between align-content-between g-2 p-3">
-        <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
+    <productCard v-for="item in GetProducts " :key="item" :item='item'/>
+        <!-- <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
             <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
             <div class="product-details">
                 <header class="d-flex justify-content-between">
@@ -168,13 +169,23 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
 </div>
 </template>
 <script>
-
-export default {
-   name:'products-board'
+import productCard from '@/components/global/productCard.vue'
+import { mapGetters } from 'vuex';
+export default{
+   name:'products-board',
+   components:{productCard},
+   data(){
+    return{
+        
+    }
+   },
+   computed:{
+    ...mapGetters(['GetProducts'])
+   }
 }
 </script>
 <style scoped>

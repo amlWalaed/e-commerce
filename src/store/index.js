@@ -36,19 +36,23 @@ export default new Vuex.Store({
           id:"0",
           name:"لحمة",
           price : 130,
+          discount:40,
           description:"هذا مثال لنص يمكن استبداله",
           photo:"https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__340.jpg",
           properties:{
             },
+          storeName:'باب الحارة'
       },
       {
         id:"0",
         name:"طماطم",
         price : 10,
+        discount:40,
         description:"هذا مثال لنص يمكن استبداله",
         photo:"https://images.unsplash.com/photo-1607305387299-a3d9611cd469?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dG9tYXRvfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
         properties:{
-        }
+        },
+        storeName:'حموكشة'
       },
       {
         id:"0",
@@ -58,8 +62,42 @@ export default new Vuex.Store({
         description:"هذا مثال لنص يمكن استبداله",
         photo:"https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dessert-main-image-molten-cake-0fbd4f2.jpg",
         properties:{
-        }
-      }
+        },
+        storeName:'العز السورى'
+      },
+      {
+        id:"0",
+        name:"لحمة",
+        price : 130,
+        discount:40,
+        description:"هذا مثال لنص يمكن استبداله",
+        photo:"https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__340.jpg",
+        properties:{
+          },
+        storeName:'باب الحارة'
+    },
+    {
+      id:"0",
+      name:"طماطم",
+      price : 10,
+      discount:40,
+      description:"هذا مثال لنص يمكن استبداله",
+      photo:"https://images.unsplash.com/photo-1607305387299-a3d9611cd469?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dG9tYXRvfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+      properties:{
+      },
+      storeName:'حموكشة'
+    },
+    {
+      id:"0",
+      name:"كيك",
+      price : 50,
+      discount:40,
+      description:"هذا مثال لنص يمكن استبداله",
+      photo:"https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dessert-main-image-molten-cake-0fbd4f2.jpg",
+      properties:{
+      },
+      storeName:'العز السورى'
+    }
     ],
     departments:[
       { id:0,
@@ -134,6 +172,9 @@ export default new Vuex.Store({
     },
     getDepartments(state){
       return state.departments
+    },
+    GetProducts(state){
+      return state.products
     }
   },
   mutations: {

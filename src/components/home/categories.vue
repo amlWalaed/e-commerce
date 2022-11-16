@@ -1,13 +1,12 @@
 <template>
     <aside class="categories">
         <header>
-            الاقسام
+            Categories
         </header>
         <ul>
-            <li v-for="depart in getDepartments " :key="depart.id">
-                <router-link :to="{ name : 'products', params:{ id : depart.id }}">
-                    <img :src="depart.photo" alt=""/>
-                    <span>{{depart.name}}</span>
+            <li v-for="category in getCategories " :key="category">
+                <router-link :to="{ name : 'categories', params:{ name :category }}">
+                    <span class="px-2">{{category}}</span>
                 </router-link>
             </li>
         </ul>
@@ -18,7 +17,10 @@ import { mapGetters } from 'vuex';
 export default {
     name:"el-categories",
     computed:{
-        ...mapGetters(['getDepartments'])
+        ...mapGetters(['getCategories'])
+    },
+    mounted(){
+       this.$store.dispatch('fetchData')
     }
 }
 </script>

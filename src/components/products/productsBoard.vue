@@ -1,175 +1,6 @@
 <template>
-<div class="products-board rounded d-flex flex-wrap justify-content-between align-content-between g-2 p-3">
-    <productCard v-for="item in GetProducts " :key="item" :item='item'/>
-        <!-- <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
-            <div class="product-details">
-                <header class="d-flex justify-content-between">
-                    <span class="product-name">شاورما</span>
-                    <span class="product-store text-success">باب الحارة</span>
-                </header>
-                <div class="product-description text-muted fs-small">
-                    هذا النص مثال لنص يمكن استبداله هذا النص مثال لنص يمكن استبداله
-                </div>
-                <div class="price d-flex">
-                    <span class="before-discount text-muted d-inline-block">50 رس</span>
-                    <span class="after-discount">40 ر.س</span>
-                </div>
-            </div>
-
-        </div>
-        <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
-            <div class="product-details">
-                <header class="d-flex justify-content-between">
-                    <span class="product-name">شاورما</span>
-                    <span class="product-store text-success">باب الحارة</span>
-                </header>
-                <div class="product-description text-muted fs-small">
-                    هذا النص مثال لنص يمكن استبداله هذا النص مثال لنص يمكن استبداله
-                </div>
-                <div class="price d-flex">
-                    <span class="before-discount text-muted d-inline-block">50 رس</span>
-                    <span class="after-discount">40 ر.س</span>
-                </div>
-            </div>
-        </div>
-        <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
-            <div class="product-details">
-                <header class="d-flex justify-content-between">
-                    <span class="product-name">شاورما</span>
-                    <span class="product-store text-success">باب الحارة</span>
-                </header>
-                <div class="product-description text-muted fs-small">
-                    هذا النص مثال لنص يمكن استبداله هذا النص مثال لنص يمكن استبداله
-                </div>
-                <div class="price d-flex">
-                    <span class="before-discount text-muted d-inline-block">50 رس</span>
-                    <span class="after-discount">40 ر.س</span>
-                </div>
-            </div>
-
-        </div>
-        <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
-            <div class="product-details">
-                <header class="d-flex justify-content-between">
-                    <span class="product-name">شاورما</span>
-                    <span class="product-store text-success">باب الحارة</span>
-                </header>
-                <div class="product-description text-muted fs-small">
-                    هذا النص مثال لنص يمكن استبداله هذا النص مثال لنص يمكن استبداله
-                </div>
-                <div class="price d-flex">
-                    <span class="before-discount text-muted d-inline-block">50 رس</span>
-                    <span class="after-discount">40 ر.س</span>
-                </div>
-            </div>
-
-        </div>
-        <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
-            <div class="product-details">
-                <header class="d-flex justify-content-between">
-                    <span class="product-name">شاورما</span>
-                    <span class="product-store text-success">باب الحارة</span>
-                </header>
-                <div class="product-description text-muted fs-small">
-                    هذا النص مثال لنص يمكن استبداله هذا النص مثال لنص يمكن استبداله
-                </div>
-                <div class="price d-flex">
-                    <span class="before-discount text-muted d-inline-block">50 رس</span>
-                    <span class="after-discount">40 ر.س</span>
-                </div>
-            </div>
-
-        </div>
-        <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
-            <div class="product-details">
-                <header class="d-flex justify-content-between">
-                    <span class="product-name">شاورما</span>
-                    <span class="product-store text-success">باب الحارة</span>
-                </header>
-                <div class="product-description text-muted fs-small">
-                    هذا النص مثال لنص يمكن استبداله هذا النص مثال لنص يمكن استبداله
-                </div>
-                <div class="price d-flex">
-                    <span class="before-discount text-muted d-inline-block">50 رس</span>
-                    <span class="after-discount">40 ر.س</span>
-                </div>
-            </div>
-
-        </div>
-        <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
-            <div class="product-details">
-                <header class="d-flex justify-content-between">
-                    <span class="product-name">شاورما</span>
-                    <span class="product-store text-success">باب الحارة</span>
-                </header>
-                <div class="product-description text-muted fs-small">
-                    هذا النص مثال لنص يمكن استبداله هذا النص مثال لنص يمكن استبداله
-                </div>
-                <div class="price d-flex">
-                    <span class="before-discount text-muted d-inline-block">50 رس</span>
-                    <span class="after-discount">40 ر.س</span>
-                </div>
-            </div>
-
-        </div>
-        <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
-            <div class="product-details">
-                <header class="d-flex justify-content-between">
-                    <span class="product-name">شاورما</span>
-                    <span class="product-store text-success">باب الحارة</span>
-                </header>
-                <div class="product-description text-muted fs-small">
-                    هذا النص مثال لنص يمكن استبداله هذا النص مثال لنص يمكن استبداله
-                </div>
-                <div class="price d-flex">
-                    <span class="before-discount text-muted d-inline-block">50 رس</span>
-                    <span class="after-discount">40 ر.س</span>
-                </div>
-            </div>
-
-        </div>
-        <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
-            <div class="product-details">
-                <header class="d-flex justify-content-between">
-                    <span class="product-name">شاورما</span>
-                    <span class="product-store text-success">باب الحارة</span>
-                </header>
-                <div class="product-description text-muted fs-small">
-                    هذا النص مثال لنص يمكن استبداله هذا النص مثال لنص يمكن استبداله
-                </div>
-                <div class="price d-flex">
-                    <span class="before-discount text-muted d-inline-block">50 رس</span>
-                    <span class="after-discount">40 ر.س</span>
-                </div>
-            </div>
-
-        </div>
-        <div class="product-contanier rounded p-2 my-2 col-lg-4 col-12">
-            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="rounded"/>
-            <div class="product-details">
-                <header class="d-flex justify-content-between">
-                    <span class="product-name">شاورما</span>
-                    <span class="product-store text-success">باب الحارة</span>
-                </header>
-                <div class="product-description text-muted fs-small">
-                    هذا النص مثال لنص يمكن استبداله هذا النص مثال لنص يمكن استبداله
-                </div>
-                <div class="price d-flex">
-                    <span class="before-discount text-muted d-inline-block">50 رس</span>
-                    <span class="after-discount">40 ر.س</span>
-                </div>
-            </div>
-
-        </div> -->
+<div class="products-board rounded d-flex flex-wrap justify-content-center align-content-between g-2 p-3">
+    <productCard v-for="item in getProductsByCategory[this.$route.params.name]" :key="item.id" :item='item'/>
 </div>
 </template>
 <script>
@@ -184,7 +15,7 @@ export default{
     }
    },
    computed:{
-    ...mapGetters(['GetProducts'])
+    ...mapGetters(['getProductsByCategory'])
    }
 }
 </script>
@@ -194,7 +25,9 @@ export default{
 }
 .products-board .product-contanier{
     border: 1px solid var(--gray-color2);
-    width: 33%;
+    width: 32%;
+    position: relative;
+    margin: 0 5px;
 }
 .products .product-contanier img{
     width: 100%;

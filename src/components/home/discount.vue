@@ -2,8 +2,8 @@
     <div class="img-box">
         <div class="box">
             <div class="overlay">
-                <p>خصم 50%</p>
-                <Button>تسوق الان</Button>
+                <p>50%</p>
+                <Button> shopping now</Button>
             </div>
             <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000" alt="">
         </div>

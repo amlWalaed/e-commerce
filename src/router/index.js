@@ -21,14 +21,19 @@ const routes = [
     component: () => import(/* webpackChunkName: "join-us" */'../views/join-us.vue')
   },
   {
-    path: '/products/:id',
-    name: 'products',
+    path: '/categories/:name',
+    name: 'categories',
     component: () => import(/* webpackChunkName: "products" */'../views/products.vue')
   },
   {
     path: '/cart',
     name: 'cart',
     component: () => import(/* webpackChunkName: "cart" */'../views/cart.vue')
+  },
+  {
+    path: '/product/:id',
+    name: 'productDetails',
+    component: () => import(/* webpackChunkName: "cart" */'../views/productDetails.vue')
   }
 ]
 

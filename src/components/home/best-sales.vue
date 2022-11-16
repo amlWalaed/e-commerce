@@ -6,210 +6,17 @@
   >
   <div class="categories">
     <section class="d-flex justify-content-between">
-      <header>الاكثر مبيعا</header>
-      <span class="dispaly-all">عرض الكل</span>
+      <header>Best Sales</header>
+      <span class="dispaly-all">Show all</span>
     </section>
     <div class="categories-links">
-      <router-link :to="{ name : 'products', params:{ id : depart.id }}" v-for="depart in getDepartments" :key="depart.id">{{depart.name}}</router-link>
+      <router-link :to="{ name : 'categories', params:{ name : Category }}" v-for="Category in getCategories" :key="Category">{{Category}}</router-link>
     </div>
     
   </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="card" style="width: 18rem">
-          <img src="https://wallpaperaccess.com/full/2489629.jpg" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">
-              <div class="product-name">
-                كنزة صوفية
-              </div>
-              <div class="store-name">
-                اسم المتجر
-              </div>
-            </h5>
-            <p class="card-text product-description text-secondary">
-             هذا النص مثال لنص يمكن استبداله 
-            </p>
-            <div class="price d-flex">
-              <div class="price-before text-muted">
-                100 ر.س
-              </div>
-              <div class="price-after">
-                60 ر.س
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="https://wallpaperaccess.com/full/2489629.jpg" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">
-              <div class="product-name">
-                كنزة صوفية
-              </div>
-              <div class="store-name">
-                اسم المتجر
-              </div>
-            </h5>
-            <p class="card-text product-description text-secondary">
-             هذا النص مثال لنص يمكن استبداله 
-            </p>
-            <div class="price d-flex">
-              <div class="price-before text-muted">
-                100 ر.س
-              </div>
-              <div class="price-after">
-                60 ر.س
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=pexels-pixabay-461198.jpg&fm=jpg" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">
-              <div class="product-name">
-                كنزة صوفية
-              </div>
-              <div class="store-name">
-                اسم المتجر
-              </div>
-            </h5>
-            <p class="card-text product-description text-secondary">
-             هذا النص مثال لنص يمكن استبداله 
-            </p>
-            <div class="price d-flex">
-              <div class="price-before text-muted">
-                100 ر.س
-              </div>
-              <div class="price-after">
-                60 ر.س
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dessert-main-image-molten-cake-0fbd4f2.jpg" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">
-              <div class="product-name">
-                كنزة صوفية
-              </div>
-              <div class="store-name">
-                اسم المتجر
-              </div>
-            </h5>
-            <p class="card-text product-description text-secondary">
-             هذا النص مثال لنص يمكن استبداله 
-            </p>
-            <div class="price d-flex">
-              <div class="price-before text-muted">
-                100 ر.س
-              </div>
-              <div class="price-after">
-                60 ر.س
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card" style="width: 18rem">
-          <img src="https://images.unsplash.com/photo-1628771065518-0d82f1938462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1lZGljaW5lfGVufDB8fDB8fA%3D%3D&w=1000&q=80" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">
-              <div class="product-name">
-                كنزة صوفية
-              </div>
-              <div class="store-name">
-                اسم المتجر
-              </div>
-            </h5>
-            <p class="card-text product-description text-secondary">
-             هذا النص مثال لنص يمكن استبداله 
-            </p>
-            <div class="price d-flex">
-              <div class="price-before text-muted">
-                100 ر.س
-              </div>
-              <div class="price-after">
-                60 ر.س
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1206682746.jpg" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">
-              <div class="product-name">
-                كنزة صوفية
-              </div>
-              <div class="store-name">
-                اسم المتجر
-              </div>
-            </h5>
-            <p class="card-text product-description text-secondary">
-             هذا النص مثال لنص يمكن استبداله 
-            </p>
-            <div class="price d-flex">
-              <div class="price-before text-muted">
-                100 ر.س
-              </div>
-              <div class="price-after">
-                60 ر.س
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="https://wallpaperaccess.com/full/2489629.jpg" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">
-              <div class="product-name">
-                كنزة صوفية
-              </div>
-              <div class="store-name">
-                اسم المتجر
-              </div>
-            </h5>
-            <p class="card-text product-description text-secondary">
-             هذا النص مثال لنص يمكن استبداله 
-            </p>
-            <div class="price d-flex">
-              <div class="price-before text-muted">
-                100 ر.س
-              </div>
-              <div class="price-after">
-                60 ر.س
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="https://wallpaperaccess.com/full/2489629.jpg" class="card-img-top rounded" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">
-              <div class="product-name">
-                كنزة صوفية
-              </div>
-              <div class="store-name">
-                اسم المتجر
-              </div>
-            </h5>
-            <p class="card-text product-description text-secondary">
-             هذا النص مثال لنص يمكن استبداله 
-            </p>
-            <div class="price d-flex">
-              <div class="price-before text-muted">
-                100 ر.س
-              </div>
-              <div class="price-after">
-                60 ر.س
-              </div>
-            </div>
-          </div>
-        </div>
+       <productCard v-for="item in getAllProducts" :key="item.id" :item='item' />
       </div>
     </div>
     <button
@@ -236,13 +43,15 @@
 </template>
 <script>
 import { mapGetters } from 'vuex';
+import productCard from './../global/productCard.vue'
 export default {
   name: "best-sales",
   methods: {
    
   },
+  components:{productCard},
   computed:{
-    ...mapGetters(['getDepartments'])
+    ...mapGetters(['getAllProducts' ,'getCategories'])
   }
 };
 </script>

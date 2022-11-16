@@ -3,45 +3,43 @@
         <table class="table p-3 ">
             <thead>
                 <tr>
-                    <th scope="col text-center">المنتج</th>
-                    <th scope="col text-center">الخصائص</th>
-                    <th scope="col text-center">السعر</th>
-                    <th scope="col text-center">الكمية</th>
-                    <th scope="col text-center">المجموع</th>
+                    <th scope="col text-center">product</th>
+                    <th scope="col text-center">discountPercentage</th>
+                    <th scope="col text-center">price</th>
+                    <th scope="col text-center">amount</th>
+                    <th scope="col text-center">discountedPrice</th>
                 </tr>
             </thead>
         <tbody>
-            <tr v-for="item in getCartData" :key="item.id">
+            <tr v-for="item in getCarts[0].products" :key="item.id">
                 <td class="item-details d-flex justify-content-evenly align-items-center">
-                    <div class="item-remove text-white fw-bold rounded-circle px-2" @click="removeItem(item)">X</div>
-                    <img :src="item.photo"/>
-                    <router-link to="/">
+                    <router-link :to="{ name : 'productDetails', params:{ id :item.id }}">
                         <div class="details">
-                            <div class="item-name fw-bold">{{item.name}}</div>
+                            <div class="item-name fw-bold">{{item.title}}</div>
                         </div>
                     </router-link>
                 </td>
                 <td>
-                    <span v-for="property in item.properties" :key="property" class="item-property btn btn-dark">{{ property }}</span>
+                   {{item.discountPercentage}} %
                 </td>
                 <td class="item-price">
-                    {{ item.price }} ر.س
+                    {{ item.price }} $
                 </td>
                 <td class="item-num">
-                    <span @click="increaseAmount(item)" class="plus rounded px-2 mx-2">+</span>
-                    {{ item.amount }}
-                    <span @click="decreaseAmount(item)" class="munis rounded px-2 mx-2">-</span>
+                    <span class="plus rounded px-2 mx-2">+</span>
+                    {{ item.quantity }}
+                    <span  class="munis rounded px-2 mx-2">-</span>
                 </td>
                 <td class="total">
-                    {{ item.amount * item.price}}
+                    {{ item.total}}
                 </td>
             </tr>
-            <tr v-if="getCartData.length===0">
+            <tr v-if="getCarts.length===0">
                 <td colspan="5">
                     <div class="no-vouchers text-center fw-bold w-100">
-                        لا يوجد مشتريات
+                        no purchases
                     </div>
-                    <router-link to="/" class="btn btn-success text-white my-4">التسوق</router-link>
+                    <router-link to="/" class="btn btn-success text-white my-4">buy now</router-link>
                 </td>
             </tr>
         </tbody>
@@ -49,14 +47,13 @@
     </div>
 </template>
 <script>
-import { mapGetters  , mapMutations } from 'vuex'
+import { mapGetters } from 'vuex'
 export default{
     name:'cart-table',
     computed : {
-    ...mapGetters({getCartData: 'getCartData' , getTotal:'getTotal'}),
+    ...mapGetters(['getCarts']),
 },
 methods:{
-    ...mapMutations(['increaseAmount' , 'decreaseAmount' , 'removeItem'])
 }
 }
 </script>
